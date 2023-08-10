@@ -1,0 +1,57 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: var(--background-color);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card .aviso {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--advice-card-color);
+    margin: 20px;
+    width: 345px;
+    border-radius: 10px;
+}
+
+.card .aviso .aviso-id {
+    color: var(--advice-dice-color);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.card .aviso .descricao {
+    font-size: 23px;
+    padding: 23px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.card .aviso .divisor {
+    max-width: 310px;
+}
+
+.card .aviso button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--advice-dice-color);
+    transform: translateY(50%);
+}
+
+.card .aviso button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 25px var(--advice-dice-color);
+    transition: ease-in-out 0.090s;
+}
